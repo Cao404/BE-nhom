@@ -22,7 +22,7 @@ builder.Services.AddSingleton<SqlConnectionFactory>();
 builder.Services.AddScoped<DanhMucRepository>();
 builder.Services.AddScoped<SanPhamRepository>();
 builder.Services.AddScoped<KhachHangRepository>();
-
+builder.Services.AddScoped<DonHangRepository>();
 var app = builder.Build();
 
 // Swagger

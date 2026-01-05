@@ -13,4 +13,7 @@ public sealed class SqlConnectionFactory
     }
 
     public SqlConnection Create() => new SqlConnection(_cs);
+
+    // ✅ thêm dòng này để code cũ (_factory.CreateConnection()) không lỗi
+    public SqlConnection CreateConnection() => Create();
 }
